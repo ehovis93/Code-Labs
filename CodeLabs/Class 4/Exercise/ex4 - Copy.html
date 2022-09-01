@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+<style>
+    body {padding: 30px;}
+</style>
+</head>
+<script src="C:\Users\ehovi\OneDrive\Documents\CodeLabs\Exercises\Exercise 4\ex4.js"></script>
+<body>
+    <div class="jumbotron text-center">
+        <button class="btn btn-primary lala-btn">
+            Press Me!
+        </button>
+
+</div>
+
+<script>
+    const lalaButton = document.querySelector('.lala-btn');
+    function notListening(){
+    document.body.style.backgroundColor = '#1A1A1A';
+    
+}
+    function pressMe(){
+        document.body.style.backgroundColor = '#C00C00';
+    }
+
+    lalaButton.addEventListener('click', notListening);
+    lalaButton.addEventListener('mouseenter', pressMe)
+//    const buttons = document.querySelectorAll('button', #);
+//     buttons.forEach(button=> button.addEventListener('mouseleave', notListening));
+   
+</script>
+    
+</body>
+</html>
